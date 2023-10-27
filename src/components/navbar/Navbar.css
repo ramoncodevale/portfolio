@@ -1,0 +1,26 @@
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap');
+
+ nav {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     margin-top: 49px;
+ }
+
+ .ul-list {
+     display: flex;
+     justify-content: space-between;
+     list-style: none;
+ }
+
+ .links {
+     color: var(--color);
+     font-size: 20px;
+     text-decoration: none;
+     font-weight: 500;
+     padding: 67px;
+ }
+
+ .icons {
+    padding: 20px;
+ }
