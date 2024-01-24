@@ -26,7 +26,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    height:70px;
+    height: 70px;
     align-items: center;
     padding-top: 10px;
 }
@@ -46,14 +46,17 @@ li {
 }
 
 header a {
-    color: var(--color-text);
-    text-decoration: none;
+    color: var(--color-hover);
     padding: 30px;
     font-size: 18px;
 }
 
+a {
+    text-decoration: none;
+}
+
 a:hover {
-    color: var(--color-hover);
+    color: var(--color-text);
 }
 
 section {
@@ -61,12 +64,12 @@ section {
 }
 
 section h1 {
-    color: var(--color-text);
+    color: var(--color-hover);
     font-size: 44px;
 }
 
-h1 span{
-    color:var(--color-secundary);
+h1 span {
+    color: var(--color-secundary);
 }
 
 .container-inicio {
@@ -74,7 +77,7 @@ h1 span{
     justify-content: space-evenly;
 }
 
-.container-inicio h1{
+.container-inicio h1 {
     margin-top: 100px;
 }
 
@@ -92,8 +95,8 @@ h1 span{
 .buttons button {
     width: 150px;
     height: 40px;
-    background-color: var(--color-text);
-    color: var(--background-card);
+    background-color: var(--background-card);
+    color: var(--color-hover);
     margin: 0 5px;
     border-radius: 10px;
     border: none;
@@ -102,10 +105,29 @@ h1 span{
     font-weight: 400;
 }
 
- button:hover {
-  background-color: var(--color-hover);
+button:hover {
+    background-color: var(--color-secundary);
+    color: var(--color-hover)
 }
 
 .container-sobre {
+    display: flex;
+    justify-content: center;
+}
+
+.container-sobre h1 {
+    color: var(--color-hover);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.container-sobre p {
+    font-size: 18px;
+    color: var(--color-hover);
     margin-top: 50px;
+}
+
+.container-sobre img {
+    width: 400px;
+    height: 400px;
 }
