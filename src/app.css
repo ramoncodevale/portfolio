@@ -1,0 +1,17 @@
+
+
+.light-about {
+    background-color: var(--background-button-primary-light);
+    color: var(--color-text-primary-light);
+}
+
+.dark-about {
+    background-color: var(--background-container-about-dark);
+    color: var(--color-text-primary-dark);
+}
+
+
+.light {
+    background-color: var(--background-color-light);
+    color: var(--color-text-primary-light);
+}

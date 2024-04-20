@@ -1,0 +1,108 @@
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 156px;
+    position: relative;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container .title-home-dark {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--background-button-primary);
+}
+
+.text-container .title-home-light {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--background-button-primary);
+}
+
+.text-front-end {
+    font-size: 24px;
+    margin-top: 32px;
+    font-family: "Heebo", sans-serif;
+}
+
+.text-container p {
+    /* color: var(--color-text-secundary); */
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+
+.img-computer {
+    width: 488px;
+    height: 417px;
+}
+
+.button-container {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.btn-cv {
+    width: 160px;
+    height: 56px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--background-button-primary);
+
+}
+
+.btn-cv a {
+    color: var(--color-text-primary);
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn-contact {
+    width: 160px;
+    height: 56px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--background-button-secundary);
+    border: 2px solid var(--color-text-primary)
+}
+
+.btn-contact  a {
+    color: var(--color-text-primary);
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .home{
+        display: flex;
+        flex-direction:column-reverse;
+        align-items: center;
+        margin-top: 48px;
+    }
+
+    .home-container  {
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    .img-computer {
+        width: 350px;
+        height: 350px;
+    }
+
+}

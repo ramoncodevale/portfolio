@@ -1,0 +1,41 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+}
+
+:root {
+  /* Modo Dark */
+  --background-color: #171717;
+  --color-text-primary: #FFFFFF;
+  --color-text-secundary: #CDD0D4;
+  --background-container-card: #6b7280;
+  --background-button-primary: #22c55e;
+  --background-button-secundary: #18181b;
+  --background-container-about: #3f3f46;
+
+  /* Modo Light */
+  --background-color-light: #FFFFFF;
+  /* Background do corpo */
+  --color-text-primary-light: #171717;
+  /* Cor do texto principal */
+  --color-text-secondary-light: #6b7280;
+  /* Cor do texto secundário */
+  --background-container-card-light: #EDEFF0;
+  /* Fundo do contêiner do cartão */
+  --background-button-primary-light: #22c55e;
+  /* Fundo do botão primário */
+  --background-button-secondary-light: #F4F4F4;
+  /* Fundo do botão secundário */
+  --background-container-about-light: #F2F2F2;
+  /* Fundo do contêiner sobre */
+}
+
+
+
+body {
+  background-color: var(--background-color);
+  color: var(--color-text-primary);
+}
