@@ -3,6 +3,7 @@ import './home.css';
 import { FaFileAlt } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import computer from '../../assets/computer.svg';
+import curriculum from '../../assets/curriculo.jpg'
 import { DarkModeContext } from '../../context/dark-mode-context';
 import { useContext} from 'react';
 
@@ -20,7 +21,7 @@ export function Home() {
                     </div>
                 <div className="button-container">
                     <button className='btn-cv'>
-                        <a href="#">
+                        <a href={curriculum} target='_blank'>
                             <FaFileAlt />
                             Meu Currículo
                         </a>
