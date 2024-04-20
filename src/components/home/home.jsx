@@ -26,7 +26,7 @@ export function Home() {
                         </a>
                     </button>
                     <button className='btn-contact'>
-                        <a href="https://web.whatsapp.com/" target='_blank'>
+                        <a href="https://api.whatsapp.com/send/?phone=1198887-2804&text&type=phone_number&app_absent=0" target='_blank'>
                              Contato
                             <FaArrowRight />
                         </a>
