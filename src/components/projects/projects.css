@@ -63,8 +63,49 @@
 
 .img-projeto {
     width: 336px;
-    height: 200px;
+    height: auto;
     border-radius: 0px 0px 8px 8px;
+}
+
+.icons-project {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.title-project-dark {
+    text-align: center;
+    margin-top: 10px;
+    color: var(--color-text-primary);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.title-project-light {
+    text-align: center;
+    margin-top: 10px;
+    color: var(--color-text-primary-light);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.description-project-dark {
+    text-align: center;
+    margin-top: 10px;
+    color: var(--color-text-primary);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.description-project-light{
+    text-align: center;
+    margin-top: 10px;
+    color: var(--color-text-primary-light);
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .container-button-projects {
@@ -75,7 +116,7 @@
 
 .button-projects-dark {
     width: 128px;
-    height: 46px;
+    height: 40px;
     background-color: var(--background-button-primary);
     color: var(--color-text-primary);
     border-radius: 8px;
@@ -100,15 +141,14 @@
 .links-projects-dark {
     color: var(--color-text-primary);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .links-projects-light {
     color: var(--color-text-primary-light);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
 }
-
 
 
 .button-project {
