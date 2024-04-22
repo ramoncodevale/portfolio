@@ -3,7 +3,7 @@ import './home.css';
 import { FaFileAlt } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import computer from '../../assets/computer.svg';
-import curriculum from '../../assets/curriculo.jpg'
+import curriculum from '../../assets/CV-RAMON-VALENTIM-FRONT-END.pdf'
 import { DarkModeContext } from '../../context/dark-mode-context';
 import { useContext} from 'react';
 
