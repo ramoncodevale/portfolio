@@ -1,7 +1,5 @@
 import './card-projects.css'
 
-import { IoLogoJavascript } from "react-icons/io5";
-
 import { DarkModeContext } from '../../context/dark-mode-context';
 import { useContext } from 'react';
 
