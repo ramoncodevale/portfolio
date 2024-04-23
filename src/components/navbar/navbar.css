@@ -5,6 +5,7 @@
     height: 80px;
     padding-left: 80px;
     padding-right: 80px;
+    border-radius: 12px;
     background-color: var(--background-color-light);
     box-shadow: 2px 2px 2px 0 var(--background-button-primary-light);
     border-bottom: 2px solid var(--background-button-primary-light);
@@ -20,6 +21,8 @@
     background-color: var(--background-color);
     box-shadow: 2px 2px 2px 0 #0c0a09;
     border-bottom: 2px solid #0c0a09;
+    border-radius: 12px;
+
 }
 
 header h3 {
@@ -69,46 +72,6 @@ header button {
     color: var(--background-button-primary);
 }
 
-/* .list-mobile {
-    background-color: var(--background-container-about);
-    color: var(--color-text-primary);
-    width: 80%;
-    height: 100vh;
-    position: absolute;
-    right: 0;
-    list-style: none;
-    display: flex;
-    align-items: flex-end;
-    margin-top: 32px;
-    gap: 8px;
-    list-style: none;
-    z-index: 1000;
-} */
-
-.nav-light {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    padding-left: 80px;
-    padding-right: 80px;
-    background-color: var(--background-color-light);
-    box-shadow: 2px 2px 2px 0 var(--background-button-primary-light);
-    border-bottom: 2px solid var(--background-button-primary-light);
-}
-
-.nav-dark {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    padding-left: 80px;
-    padding-right: 80px;
-    background-color: var(--background-color);
-    box-shadow: 2px 2px 2px 0 #0c0a09;
-    border-bottom: 2px solid #0c0a09;
-}
-
 header h3 {
     color: var(--background-button-primary);
     font-size: 24px;
@@ -132,61 +95,47 @@ header button {
     list-style: none;
 }
 
-
-.link-inicio {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--background-button-primary);
-    text-decoration: none;
-}
-
-.links-light {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--color-text-primary);
-    text-decoration: none;
-}
-
-
-.links-light {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--color-text-primary-light);
-    text-decoration: none;
-}
-
-.links-dark:hover {
-    color: var(--background-button-primary);
-}
-
-.links-light:hover {
-    color: var(--background-button-primary);
-}
-
 .list-mobile {
-    background-color: var(--background-button-secundary);
+    background-color: var(--background-container-about);
     color: var(--color-text-primary);
-    width: 80%;
-    height: 100vh;
+    width: 280px;
+    height: 736px;
     position: absolute;
     right: 0;
+    top: 60px;
     list-style: none;
     display: flex;
-    align-items: flex-end;
-    margin-top: 32px;
-    gap: 8px;
-    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    font-size: 16px;
     z-index: 1000;
 }
 
-.btn-dark-mode {
-    background: transparent;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+.list-mobile li {
+    margin-top: 12px;
 }
 
-.links-dark {
+.list-mobile a {
+    text-decoration: none;
+}
+
+.list-mobile a:hover {
+    color: var(--background-button-primary);
+}
+
+
+.toggle-mode {
+    background-color: var(--background-button-primary);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    border: none;
+}
+
+
+.links-mobile {
     color: var(--color-text-primary);
     font-weight: 700;
     margin-top: 10px;
@@ -197,20 +146,6 @@ header button {
     font-size: 16px;
     flex: end;
 }
-
-.links-light {
-    color: var(--color-text-primary-light);
-    font-weight: 700;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 24px;
-    font-size: 16px;
-    flex: end;
-}
-
-
 
 .toggle {
     display: flex;
@@ -230,12 +165,6 @@ header button {
     border: none;
 }
 
-.menu-close {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
 
 .btn-dark-mode {
     background: transparent;
@@ -300,13 +229,17 @@ header button {
     }
 
     .nav-dark {
-        padding-left: 10px;
-        padding-right: 10px;
+        width: 100%;
+        height: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .nav-light {
-        padding-left: 10px;
-        padding-right: 10px;
+        width: 100%;
+        height: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .links-web {
@@ -319,7 +252,6 @@ header button {
 
     .menu {
         display: flex;
-        justify-content: space-between;
     }
 
 
@@ -339,9 +271,8 @@ header button {
         color: var(--background-button-primary);
     }
 
-    
     .links-light-mobile {
-        color: var(--background-button-primary-light);
+        color: var(--color-text-primary-light);
         font-weight: 700;
         margin-top: 10px;
         display: flex;
