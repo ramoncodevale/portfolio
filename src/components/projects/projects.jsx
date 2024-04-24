@@ -24,14 +24,6 @@ export function Projects() {
       />
       
     ))}
-
-      <div className="button-project">
-        <button className='btn-project'>
-          <a href="#" >Ver Tudo
-          </a>
-          <FaArrowRight className='icon-arrow' />
-        </button>
-      </div>
     </section>
   )
 }
