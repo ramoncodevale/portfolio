@@ -1,6 +1,5 @@
 import './projects.css'
 
-import { FaArrowRight } from "react-icons/fa";
 import { DarkModeContext } from '../../context/dark-mode-context';
 import { useContext } from 'react';
 import { projects } from '../../constants/index';
