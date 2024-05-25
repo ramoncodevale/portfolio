@@ -11,13 +11,12 @@ export function Navbar() {
     const { darkModeEnabled, toggleDarkMode } = useContext(DarkModeContext)
 
     function toggleOpenMenu() {
-        setOpenMenu(true)
+        setOpenMenu(!openMenu); // Alterado para alternar entre abrir e fechar
     }
 
     function closeMenu() {
-        setOpenMenu(false)
+        setOpenMenu(false);
     }
-
 
     return (
         <>
@@ -37,10 +36,10 @@ export function Navbar() {
                 </div>
 
                 <ul className='links-web'>
-                    <li><a className={darkModeEnabled ? "links-dark" : "links-light"} href="#">Início</a></li>
-                    <li><a className={darkModeEnabled ? "links-dark" : "links-light"} href="#">Sobre Mim</a></li>
-                    <li><a className={darkModeEnabled ? "links-dark" : "links-light"} href="#">Projetos</a></li>
-                    <li><a className={darkModeEnabled ? "links-dark" : "links-light"} href="#">Contatos</a></li>
+                    <li><a className={darkModeEnabled ? "links-dark" : "links-light"} href="#" onClick={closeMenu}>Início</a></li>
+                    <li><a className={darkModeEnabled ? "links-dark" : "links-light"} href="#" onClick={closeMenu}>Sobre Mim</a></li>
+                    <li><a className={darkModeEnabled ? "links-dark" : "links-light"} href="#" onClick={closeMenu}>Projetos</a></li>
+                    <li><a className={darkModeEnabled ? "links-dark" : "links-light"} href="#" onClick={closeMenu}>Contatos</a></li>
                     <button className='btn-dark-mode' type='button' onClick={toggleDarkMode}>
                         {darkModeEnabled ? (
                             <MdWbSunny color={darkModeEnabled ? "#fff" : "#22c55e"} fontSize={20} />
@@ -49,34 +48,29 @@ export function Navbar() {
                         )}
                     </button>
                 </ul>
-
-
             </header>
+
             {openMenu && (
                 <div className={darkModeEnabled ? "links-dark" : "links-light"} id='nav-bar'>
                     <ul className='list-mobile'>
                         <div className="menu">
                         </div>
-                        <li><a className="links-mobile" href="#home">Início</a></li>
-                        <li><a className="links-mobile"  href="#about">Sobre Mim</a></li>
-                        <li><a className="links-mobile"   href="#projects">Projetos</a></li>
-                        <li><a className="links-mobile"  href="#contact">Contatos</a></li>
+                        <li><a className="links-mobile" href="#home" onClick={closeMenu}>Início</a></li>
+                        <li><a className="links-mobile" href="#about" onClick={closeMenu}>Sobre Mim</a></li>
+                        <li><a className="links-mobile" href="#projects" onClick={closeMenu}>Projetos</a></li>
+                        <li><a className="links-mobile" href="#contact" onClick={closeMenu}>Contatos</a></li>
                         <div className="toggle">
-                                <button className='toggle-mode' type='button' onClick={toggleDarkMode}>
-                                    {darkModeEnabled ? (
-                                        <MdWbSunny color="#fff" fontSize={25} />
-                                    ) : (
-                                        <LuMoon color="#fff" fontSize={25} />
-                                    )}
-                        </button>
-                            
+                            <button className='toggle-mode' type='button' onClick={toggleDarkMode}>
+                                {darkModeEnabled ? (
+                                    <MdWbSunny color="#fff" fontSize={25} />
+                                ) : (
+                                    <LuMoon color="#fff" fontSize={25} />
+                                )}
+                            </button>
+                        </div>
+                    </ul>
                 </div>
-                        </ul >
-
-                    </div >
-                )
-}
+            )}
         </>
     );
 }
-
