@@ -1,8 +1,28 @@
-# React + Vite
+# Meu Portfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o meu portfólio online, onde eu mostro meus projetos e habilidades como desenvolvedor. O portfólio foi desenvolvido utilizando HTML, CSS, React e JavaScript.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **HTML:** Utilizado para a estruturação do conteúdo da página.
+- **CSS:** Responsável pela estilização e aparência do portfólio.
+- **JavaScript:** Utilizado para adicionar interatividade e funcionalidades dinâmicas à página.
+- **React:** Utilizado para construir componentes reutilizáveis e manter um estado de aplicativo consistente.
+
+## Estrutura do Projeto
+
+- **src/**: Este diretório contém todos os arquivos fonte do projeto.
+  - **components/**: Contém os componentes React utilizados para construir o portfólio.
+  - **styles/**: Contém os arquivos de estilo em CSS.
+  - **App.js**: O componente principal que renderiza o aplicativo.
+  - **index.js**: O ponto de entrada do aplicativo React.
+
+## Contribuição
+
+Contribuições são sempre bem-vindas! Se você quiser melhorar este projeto, sinta-se à vontade para enviar um pull request.
+
+## Autor
+
+[Ramon Valentim] - [https://portfolio-nine-neon-58.vercel.app//https://www.linkedin.com/in/ramon-valentim-3435541a8//https://github.com/ramoncodevale/]
+
+
