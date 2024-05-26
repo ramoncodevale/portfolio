@@ -20,6 +20,18 @@
   gap: 20px;
 }
 
+.text-footer-dark {
+  color: var(--background-color-light);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.text-footer-light {
+  color: var(--background-button-primary);
+  font-weight: 600;
+  font-size: 16px;
+}
+
 .footer-links a {
   color: var(--background-button-primary);
   text-decoration: none;
@@ -29,21 +41,15 @@
   transition: color 0.3s ease;
 }
 
-.footer-links a:hover {
-  color: var(--background-button-hover);
-}
-
 .scroll-to-top {
   cursor: pointer;
   margin-top: 10px;
   font-size: 24px;
   transition: transform 0.3s ease, color 0.3s ease;
+  color: var(--background-button-primary);
 }
 
-.scroll-to-top:hover {
-  transform: translateY(-5px);
-  color: var(--background-button-hover);
-}
+
 
 @media (min-width: 768px) {
   .footer-content {

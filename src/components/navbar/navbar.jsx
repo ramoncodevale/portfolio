@@ -11,7 +11,7 @@ export function Navbar() {
     const { darkModeEnabled, toggleDarkMode } = useContext(DarkModeContext)
 
     function toggleOpenMenu() {
-        setOpenMenu(!openMenu); // Alterado para alternar entre abrir e fechar
+        setOpenMenu(!openMenu); 
     }
 
     function closeMenu() {
