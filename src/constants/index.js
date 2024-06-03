@@ -17,7 +17,7 @@ export const projects = [{
     description: "Um dashboard desenvolvido durante a Next Level Week da Rocketseat, que permite a visualização e gestão de dados dos participantes de forma dinâmica e estilizada.",
     imageUrl: images.Projeto2,
     technologies: [images.FaReact, images.BiLogoTypescript, images.SiTailwindcss],
-    projectLink: "https://dashboard-nlw-sd9e.vercel.app/"
+    projectLink: "https://dashboard-nlw-sd9e.vercel.app/add"
   },
 
   {
