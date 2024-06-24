@@ -29,4 +29,13 @@ export const projects = [{
     projectLink: "https://ramoncodevale.github.io/quiz-expert/"
   },
 
+  {
+    id: 4,
+    title: 'Countries api',
+    description: "O Explorador de Países é uma aplicação web interativa que permite aos usuários explorar informações detalhadas sobre países ao redor do mundo. Utilizando a API REST Countries, a aplicação fornece dados abrangentes, como bandeira, capital, população, área, idiomas, moeda, e localização geográfica.",
+    imageUrl: images.Projeto4,
+    technologies: [images.BiLogoTypescript, images.FaReact, images.SiTailwindcss],
+    projectLink: "https://countries-api-react-tailwind.netlify.app/",
+  }
+
 ]
