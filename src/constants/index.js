@@ -36,6 +36,6 @@ export const projects = [{
     imageUrl: images.Projeto4,
     technologies: [images.BiLogoTypescript, images.FaReact, images.SiTailwindcss],
     projectLink: "https://countries-api-react-tailwind.netlify.app/",
-  }
+  },
 
 ]
