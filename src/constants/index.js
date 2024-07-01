@@ -4,7 +4,7 @@ export const projects = [
   {
     id: 1,
     title: 'Quiz Expert',
-    description: "Rockseat Quiz Expert é um projeto dinâmico e interativo desenvolvido com o objetivo de aprimorar habilidades de aprendizado através de quizzes desafiadores. Com uma vasta gama de temas e perguntas criteriosamente selecionadas, este aplicativo proporciona uma experiência educativa envolvente para usuários de todos os níveis.",
+    description: "Rockseat Quiz Expert é um projeto dinâmico e interativo desenvolvido com o objetivo de aprimorar habilidades de aprendizado através de quizzes desafiadores. Com uma vasta gama de temas e perguntas criteriosamente selecionad.as, este aplicativo proporciona uma experiência educativa envolvente para usuários de todos os níveis.",
     imageUrl: images.Projeto1,
     technologies: [images.FaHtml5, images.FaCss3Alt, images.IoLogoJavascript],
     projectLink: "https://ramoncodevale.github.io/quiz-expert/"

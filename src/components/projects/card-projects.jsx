@@ -1,17 +1,20 @@
 import  { useContext } from 'react';
 import { DarkModeContext } from '../../context/dark-mode-context';
-
 import './card-projects.css';
 
 export function CardProjects({ title, description, imageUrl, technologies, projectLink }) {
   const { darkModeEnabled } = useContext(DarkModeContext);
+
+  if (!title || !description || !imageUrl || !technologies || !projectLink) {
+    return null; 
+  }
 
   return (
     <div className='projects-container'>
       <div className={darkModeEnabled ? 'card-projects-dark' : 'card-projects-light'}>
         <h3 className={darkModeEnabled ? 'title-project-dark' : 'title-project-light'}>{title}</h3>
         <div className='container-img-projeto'>
-          <img className='img-projeto' src={imageUrl} alt='img project' />
+          <img className='img-projeto' src={imageUrl} alt='Imagem do projeto' />
         </div>
         <div className='icons-project'>
           {technologies.map((Icon, index) => (
@@ -27,6 +30,7 @@ export function CardProjects({ title, description, imageUrl, technologies, proje
               className={darkModeEnabled ? 'links-projects-dark' : 'links-projects-light'}
               href={projectLink}
               target='_blank'
+              rel='noopener noreferrer' 
             >
               Ver Projeto
             </a>
@@ -36,3 +40,5 @@ export function CardProjects({ title, description, imageUrl, technologies, proje
     </div>
   );
 }
+
+

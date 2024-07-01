@@ -14,7 +14,7 @@ export function Projects() {
       <h3 className={darkModeEnabled ? 'text-projects-dark' : 'text-projects-light'}>Dê uma olhada nos meus projetos em destaque</h3>
       {projects.map((project) => (
         <CardProjects
-          key={project.id}
+          key={project.id} 
           title={project.title}
           description={project.description}
           imageUrl={project.imageUrl}
@@ -25,3 +25,4 @@ export function Projects() {
     </section>
   );
 }
+
